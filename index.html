@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GCI Forecast</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="site-header">
+                <div class="container">
+                    <a href="index.html" class="branding">
+                        <img src="logo.png" alt="" class="logo">
+                        <div class="logo-type">
+                            <h1 class="site-title">Simple weather forecast web app</h1>
+                            <small class="site-description">web app made during gci 2019</small>
+                        </div>
+                    </a>
+
+                    <!-- Default snippet for navigation -->
+                    <div class="main-navigation">
+                        <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+                        <ul class="menu">
+                            <li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
+                            </ul> <!-- .menu -->
+                    </div> <!-- .main-navigation -->
+
+                    <div class="mobile-navigation"></div>
+
+                </div>
+            </div> <!-- .site-header -->
+            <h1 id="description" style="text-align: center;"></h1>
+    <section>
+        <div class="hero" data-bg-image="bg.png">
+                <div class="container">
+                         <input type="search" class="find-location" name="search" id="searchbar" placeholder="Search any city"/></div></div>
+    <div id="weather" style="align-content:center;">
+        <br>
+        <h2 id="location"></h2>
+        <br>
+        <h3 id="dt"></h3>
+        <br>
+        <img id="icon" alt="weather-icon"/>
+        <h1 id="description"></h1>
+       <br>
+        <div id="details">
+            <div id="temperature">
+                <h2>Temperature</h2>
+                <p></p><br>
+            </div>
+            <div id="humidity">
+                <h2>humidity</h2>
+                <p></p><br>
+            </div>
+            <div id="sunrise">
+                <h2>Sunrise</h2>
+                <p></p><br>
+            </div>
+            <div id="sunset">
+                <h2>Sunset</h2>
+                <p></p><br>
+            </div>
+            <div id="wind">
+                <h2>Wind Speed</h2>
+                <p></p><br>
+            </div>
+            <div id="direction">
+                <h2>Wind direction</h2>
+                <p></p><br>
+            </div>
+            <div id="cloudiness">
+                <h2>Clouds</h2>
+                <p></p><br>
+            </div>
+            <div id="uv">
+                <h2>Uv index</h2>
+                <p></p><br>
+                <div id="info"></div>
+            </div>
+        </div>
+    </div>
+    <div id="nope" class="red">city not found</div>
+    <div id="loader"><img src="icons/svg/loader.svg"/></div>
+    </section>
+            <footer class="site-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                        </div>
+                        <div class="col-md-3 col-md-offset-1">
+                            <div class="social-links">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="colophon">Copyright 2019 Designed by Shadowblade. All rights reserved</p>
+                </div>
+            </footer> 
+        </div>
+        <div class="bg"></div>
+   
+    <script src="weather.js"></script>
+</body>
+</html>
