@@ -132,4 +132,4 @@ searchBar.addEventListener('keypress', (e) => {
     }
 });
 
-fetchWeather("Tokyo");
+fetchWeather("Bujumbura");
